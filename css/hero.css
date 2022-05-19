@@ -1,0 +1,94 @@
+.hero__content {
+    margin-top: 225px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: #181717;
+    max-width: 380px;
+    margin-bottom: 120px;
+}
+
+.hero__description {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #606060;
+    max-width: 620px;
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 820px) {
+    .hero__title {
+        font-size: 50px;
+    }
+    .hero__description {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .hero__content {
+        flex-wrap: wrap;
+    }
+    .hero__description {
+        font-size: 18px;
+        max-width: 320px;
+    }
+}
+
+.punkt {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-duration: 2s;
+    animation-name: punkt;
+}
+
+@keyframes punkt {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .punkt {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-name: punkt;
+    animation-duration: 2s;
+}
+
+@keyframes punkt {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} */
